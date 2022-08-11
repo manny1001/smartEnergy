@@ -4,6 +4,8 @@
     alt="Image not available"
     width="100"
     height="150"
+    style="cursor: pointer"
+    routerLink="/auth/home"
   />
   <div
     id="authbtns"
@@ -14,11 +16,8 @@
       word-wrap: break-word;
     "
   >
-    <button *ngIf="this.loginbtnsVisible === true">Login</button>
-    <button *ngIf="this.loginbtnsVisible === false"></button>
-    <button *ngIf="this.registerbtnsVisible === true" id="registerbtn">
-      Register
-    </button>
+    <button routerLink="/auth/login">Login</button>
+    <button routerLink="/auth/register">Register</button>
   </div>
 </header>
 <router-outlet></router-outlet>

@@ -13,7 +13,7 @@ const routes: Routes = [
     path: '',
     component: AuthLayoutComponent,
     children: [
-      { path: '', redirectTo: '/auth', pathMatch: 'full' },
+      { path: '', redirectTo: '/auth/home', pathMatch: 'full' },
       {
         path: 'auth',
         loadChildren: () =>

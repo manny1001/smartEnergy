@@ -8,19 +8,30 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   imageObject: Array<object> = [
     {
-      video: 'assets/video/movie.mp4', // MP4 Video url
-    },
-    {
-      video: 'assets/video/movie2.mp4',
-      posterImage: 'assets/img/slider/2_min.jpeg', //Optional: You can use this key if you want to show video poster image in slider
-      title: 'Image title',
-    },
-    {
-      image: 'assets/img/slider/1.jpg',
-      thumbImage: 'assets/img/slider/1_min.jpeg',
+      image: 'assets/SliderImage1.jpeg',
+      thumbImage: 'assets/SliderImage1.jpeg',
       alt: 'Image alt',
     },
-    
+    {
+      image: 'assets/SliderImage2.jpeg',
+      thumbImage: 'assets/SliderImage2.jpeg',
+      alt: 'Image alt',
+    },
+    {
+      image: 'assets/SliderImage3.jpeg',
+      thumbImage: 'assets/SliderImage3.jpeg',
+      alt: 'Image alt',
+    },
+    {
+      image: 'assets/SliderImage4.jpeg',
+      thumbImage: 'assets/SliderImage4.jpeg',
+      alt: 'Image alt',
+    },
+    {
+      image: 'assets/SliderImage5.jpeg',
+      thumbImage: 'assets/SliderImage5.jpeg',
+      alt: 'Image alt',
+    },
   ];
   constructor() {}
 

@@ -13,16 +13,5 @@ export class AuthLayoutComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  ngOnInit(): void {
-    this.href = this.router.url;
-    if (this.href === '/auth/login') {
-      this.loginbtnsVisible = false;
-      this.registerbtnsVisible = true;
-    }
-    if (this.href === '/auth/register') {
-      this.registerbtnsVisible = false;
-      this.loginbtnsVisible = true;
-    }
-    console.log(this.router.url);
-  }
+  ngOnInit(): void {}
 }
