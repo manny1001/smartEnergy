@@ -7,6 +7,13 @@
     flex-direction: column;
   "
 >
+  <p
+    [style.display]="selectionMade == true ? 'block' : 'none'"
+    style="align-self: center; color: #236084"
+    (click)="selectionMade = false; selectionType = ''"
+  >
+    Change Registration Type
+  </p>
   <h2
     [style.display]="selectionMade == false ? 'block' : 'none'"
     style="
@@ -23,6 +30,19 @@
   >
     Register to use Juvinae smart energy as a...
   </h2>
+  <p
+    [style.display]="this.selectionType == 'IPP' ? 'block' : ' none'"
+    style="font-family: Inter-Bold; align-self: center"
+  >
+    Register As... Independent Power Producer
+  </p>
+  <p
+    [style.display]="this.selectionType == 'Sponsor' ? 'block' : ' none'"
+    style="font-family: Inter-Bold; align-self: center"
+  >
+  Register As... Sponsor
+  </p>
+
   <div
     style="
       display: flex;
@@ -31,26 +51,35 @@
       justify-content: space-evenly;
       flex-direction: row;
     "
+    [style.display]="selectionMade == false ? 'flex' : 'none'"
   >
     <div
+      (click)="registerAs('IPP')"
       style="
+        margin: 5px;
         border: 1px solid black;
         padding: 40px;
         cursor: pointer;
-        font-family: Inter-Light;
+        text-align: center;
+        width: 200px;
       "
     >
-      Independent Power Producer
+      <p style="font-family: Inter-Light">Independent Power Producer</p>
     </div>
+
     <div
+      (click)="registerAs('Sponsor')"
       style="
+        margin: 5px;
         border: 1px solid black;
         padding: 40px;
         cursor: pointer;
         font-family: Inter-Light;
+        text-align: center;
+        width: 200px;
       "
     >
-      Independent Power Producer
+      <p style="font-family: Inter-Light">Sponsor</p>
     </div>
   </div>
   <p style="align-self: center; position: absolute; bottom: 0; color: #236084">

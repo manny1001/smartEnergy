@@ -11,4 +11,16 @@ export class RegisterComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  registerAs(type: string) {
+    console.log(type);
+    this.selectionMade = true;
+
+    if (type === 'IPP') {
+      this.selectionType = 'IPP';
+    }
+    if (type === 'Sponsor') {
+      this.selectionType = 'Sponsor';
+    }
+  }
 }
