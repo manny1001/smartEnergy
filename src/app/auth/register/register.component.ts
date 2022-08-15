@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-  selectionMade: boolean = false;
-  selectionType: string = '';
+  selectionMade: boolean = true;
+  selectionType: string = 'IPP';
   constructor() {}
 
   ngOnInit() {}
 
   registerAs(type: string) {
-    console.log(type);
+    console.log({type});
     this.selectionMade = true;
 
     if (type === 'IPP') {

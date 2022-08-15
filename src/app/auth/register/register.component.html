@@ -7,13 +7,6 @@
     flex-direction: column;
   "
 >
-  <p
-    [style.display]="selectionMade == true ? 'block' : 'none'"
-    style="align-self: center; color: #236084"
-    (click)="selectionMade = false; selectionType = ''"
-  >
-    Change Registration Type
-  </p>
   <h2
     [style.display]="selectionMade == false ? 'block' : 'none'"
     style="
@@ -32,15 +25,22 @@
   </h2>
   <p
     [style.display]="this.selectionType == 'IPP' ? 'block' : ' none'"
-    style="font-family: Inter-Bold; align-self: center"
+    style="font-size: 18pt; font-family: Inter-Bold; align-self: center"
   >
-    Register As... Independent Power Producer
+    Independent Power Producer Registration
   </p>
   <p
     [style.display]="this.selectionType == 'Sponsor' ? 'block' : ' none'"
-    style="font-family: Inter-Bold; align-self: center"
+    style="font-size: 18pt; font-family: Inter-Bold; align-self: center"
   >
-  Register As... Sponsor
+    Sponsor Registration
+  </p>
+  <p
+    [style.display]="selectionMade == true ? 'block' : 'none'"
+    style="align-self: center; color: #236084"
+    (click)="selectionMade = false; selectionType = ''"
+  >
+    Change Registration Type
   </p>
 
   <div
@@ -82,6 +82,170 @@
       <p style="font-family: Inter-Light">Sponsor</p>
     </div>
   </div>
+  <div
+    [style.display]="
+      selectionMade == true && selectionType == 'Sponsor' ? 'flex' : 'none'
+    "
+    style="display: flex; flex-direction: row; justify-content: space-evenly"
+  >
+    <div style="display: flex; flex-direction: column">
+      <div id="fullname">
+        <label>Full Name</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="DOB">
+        <label>Date of Birth</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="age">
+        <label>Age</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="Id">
+        <label>Id Number</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="nationality">
+        <label>Nationality</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="address">
+        <label>Physical Address</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="email">
+        <label>Email Address</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="tele">
+        <label>Telephone Number</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="cell">
+        <label>Cellphone Number</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="postal">
+        <label>Postal</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column">
+      <div id="companyName">
+        <label>Company Name</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyReg">
+        <label>Company Registration</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyAddress">
+        <label>Company Address</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyPosition">
+        <label>Position In Company</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyTel">
+        <label>Company Telephone</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyProjects">
+        <label>Previously Funded Projects</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+    </div>
+  </div>
+  <div
+    [style.display]="
+      selectionMade == true && selectionType == 'IPP' ? 'flex' : 'none'
+    "
+    style="display: flex; flex-direction: row; justify-content: space-evenly"
+  >
+    <div style="display: flex; flex-direction: column">
+      <div id="fullname">
+        <label>Full Name</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="DOB">
+        <label>Date of Birth</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="age">
+        <label>Age</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="Id">
+        <label>Id Number</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="nationality">
+        <label>Nationality</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="address">
+        <label>Physical Address</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="email">
+        <label>Email Address</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="tele">
+        <label>Telephone Number</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="cell">
+        <label>Cellphone Number</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="postal">
+        <label>Postal</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column">
+      <div id="companyName">
+        <label>Company Name</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyReg">
+        <label>Company Registration</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyAddress">
+        <label>Company Address</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyPosition">
+        <label>Position In Company</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyTel">
+        <label>Company Telephone</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyProjects">
+        <label>Previously Funded Projects</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyEnergySource">
+        <label>Energy Source</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+      <div id="companyEnergyCapacity">
+        <label>Energy Capacity</label>
+        <input style="margin-left: 10px" type="text" />
+      </div>
+    </div>
+  </div>
+  <button
+    [style.display]="selectionMade == true ? 'block' : 'none'"
+    routerLink="/auth/login"
+  >
+    SignUp
+  </button>
   <p style="align-self: center; position: absolute; bottom: 0; color: #236084">
     Copyright JuvinaeTech 2022
   </p>
