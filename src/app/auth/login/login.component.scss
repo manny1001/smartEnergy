@@ -15,3 +15,16 @@
 #authbtns {
   display: none !important;
 }
+#email,
+#password {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-left: 10px;
+  color: #236084;
+  font-weight: bold;
+  font-size: 19pt;
+}

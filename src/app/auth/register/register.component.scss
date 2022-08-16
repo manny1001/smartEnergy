@@ -1,13 +1,40 @@
 button {
-    height: 50px;
-    align-self: center;
-    width: 50%;
-    margin: 3%;
-    background-color: #236084;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 100%;
-    cursor: pointer;
-  }
+  height: 50px;
+  align-self: center;
+  width: 50%;
+  margin: 3%;
+  background-color: #236084;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+#fullname,
+#DOB,
+#age,
+#Id,
+#nationality,
+#address,
+#email,
+#tele,
+#cell,
+#postal,
+#companyName,
+#companyReg,
+#companyAddress,
+#companyPosition,
+#companyTel,
+#companyProjects,
+#companyEnergySource,
+#companyEnergyCapacity {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-left: 10px;
+}
