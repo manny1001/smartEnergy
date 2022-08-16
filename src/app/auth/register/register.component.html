@@ -1,9 +1,9 @@
 <div
   style="
     display: flex;
+    height: 80vh;
     width: 100%;
-    height: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
   "
 >
@@ -37,7 +37,7 @@
   </p>
   <p
     [style.display]="selectionMade == true ? 'block' : 'none'"
-    style="align-self: center; color: #236084"
+    style="align-self: center; color: #236084;cursor: pointer"
     (click)="selectionMade = false; selectionType = ''"
   >
     Change Registration Type
