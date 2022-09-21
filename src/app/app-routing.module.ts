@@ -23,10 +23,10 @@ const routes: Routes = [
   },
   //AppRoutes,
   {
-    path: 'dashboard',
+    path: '',
     component: DashboardLayoutComponent,
     children: [
-      { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+      { path: '', redirectTo: '/dashboard/home', pathMatch: 'full' },
       {
         path: 'dashboard',
         loadChildren: () =>
