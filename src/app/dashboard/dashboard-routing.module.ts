@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
-import { CreateProjectComponent } from './projects/projects/projects.component';
+import { ProjectComponent } from './projects/projects/projects.component';
+import { ProfileComponent } from './Profile/Profile.component';
+import { SupportComponent } from './Support/Support.component';
+
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
 
@@ -11,7 +14,15 @@ const routes: Routes = [
   },
   {
     path: 'projects',
-    component: CreateProjectComponent,
+    component: ProjectComponent,
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent,
+  },
+  {
+    path: 'support',
+    component: SupportComponent,
   },
 ];
 

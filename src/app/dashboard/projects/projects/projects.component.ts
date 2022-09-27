@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-create-project',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css'],
+  styleUrls: ['./projects.component.scss'],
 })
-export class CreateProjectComponent implements OnInit {
+export class ProjectComponent implements OnInit {
   selectionMade: boolean = false;
   selectionType: string = ' ';
   constructor() {}
