@@ -1,13 +1,57 @@
 .block {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   background: #236084;
-  width: 50%;
   height: 30%;
   margin: 30px;
   color: white;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 5px;
+  padding: 2%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+button {
+  height: 50px;
+  align-self: center;
+  background-color: #236084;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+#fullname,
+#DOB,
+#age,
+#Id,
+#nationality,
+#address,
+#email,
+#tele,
+#cell,
+#postal,
+#companyName,
+#companyReg,
+#companyAddress,
+#companyPosition,
+#companyTel,
+#companyProjects,
+#companyEnergySource,
+#companyEnergyCapacity {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-left: 10px;
+}
+input , textarea {
+  width: 40%;
 }
